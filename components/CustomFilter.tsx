@@ -8,10 +8,10 @@ import { Listbox, Transition } from '@headlessui/react'
 import { updateSearchParams } from "@/utils"
 
 const CustomFilter = ({ title , options }: CustomFilterProps) => {
-  const [selected,setSelected] = useState("");
+  const [selected,setSelected]: any = useState("");
   const router = useRouter();
   
-  const handleUpdateParams = (e: { title: string; value: string }) => {
+  const handleUpdateParams = (e: any) => {
     console.log('title -> ',title);
     console.log('value -> ',e.value);
 
