@@ -2,7 +2,7 @@ import {  Hero, CarCatalogue } from "@/components";
 
 
 
-export default function Home({ searchParams }) {
+export default function Home({ searchParams }: URLSearchParams) {
  
   return (
     <main className="overflow-hidden">

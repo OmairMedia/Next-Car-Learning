@@ -5,7 +5,7 @@ import CarCard from "../CarCard";
 import { fuels, yearsOfProduction } from "@/constants";
 import ShowMore from "../ShowMore";
 
-const CarCatalogue = async ({ searchParams }) => {
+const CarCatalogue = async ({ searchParams }: URLSearchParams) => {
   console.log('searchParams -> ',searchParams)
   let data = {
     manufacturer: searchParams?.manufacturer || '',
